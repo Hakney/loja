@@ -27,3 +27,22 @@ Solução comum para um problema recorrente ao utilizar o paradigma de orientaç
     - É mais interessante separar cada ação em uma classe separada;
     - Liga um evento ocorrido com suas ações;
     - Dispara uma ação e quem estiver escutando essa ação vai ser executado.
+
+**Estruturais**
+
+Padrões estruturais nos ajudam a relacionar diversas classes de forma organizada
+
+- ***Adapter***
+    - Como diminuir a complexidade do nosso código, trocando múltiplas condicionais por classes
+    - Detalhes de infraestrutura devem ser abstraídos através de interfaces
+    - O padrão ***Adapter*** pode nos ajudar a trocar detalhes de infraestrutura, sem muitas dores de cabeça
+- ***Decorator***
+    - Comportamentos adicionados em tempo de execução são possíveis, através deste padrão
+    - Analogia com árvore de natal, adicionando enfeites.
+- ***Composite***
+    - É uma representação de árvore, representa classes de forma semelhante.
+- ***Facade***
+    - Podemos pegar um sub-sistema e expor parte de suas funcionalidades através de uma classe;
+- ***Proxy***
+    - Interceptar o acesso a um método, através de uma classe derivada;
+    - Quando isso pode ser útil, em nosso caso, para fazer cache;
