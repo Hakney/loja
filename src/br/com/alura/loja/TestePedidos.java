@@ -1,8 +1,11 @@
 package br.com.alura.loja;
 
 import java.math.BigDecimal;
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
+import br.com.alura.loja.orcamento.ItemOrcamento;
 import br.com.alura.loja.pedido.EmitirNotaFiscal;
 import br.com.alura.loja.pedido.EnviarEmailPedido;
 import br.com.alura.loja.pedido.GeraPedido;
@@ -14,9 +17,9 @@ public class TestePedidos {
 	public static void main(String[] args) {
 
 		String cliente = "Hakney Lima";
-		BigDecimal valorOrcamento = new BigDecimal("300");
-		int quantidadeItens = Integer.parseInt("2");
-		GeraPedido gerador = new GeraPedido(cliente, valorOrcamento, quantidadeItens);
+		List<Orcavel> itens = new ArrayList<Orcavel>();
+		itens.add(new ItemOrcamento(BigDecimal.TEN));
+		GeraPedido gerador = new GeraPedido(cliente, itens);
 		GeraPedidoHandler handler = new GeraPedidoHandler(
 				Arrays.asList(
 						new SalvarPedidoNoBancoDeDados(),
