@@ -47,7 +47,7 @@ public class Orcamento implements Orcavel{
 		return itens.size();
 	}
 	
-	public void adicionarItem(List<Orcavel> itens) {
+	public void adicionarItens(List<Orcavel> itens) {
 		itens.forEach(i ->{
 			this.valor = valor.add(i.getValor());
 			this.itens.add(i);						
